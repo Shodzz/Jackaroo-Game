@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#512a1c" height="612.0" layoutX="-8.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="1062.0" />
+      <Button layoutX="678.0" layoutY="317.0" mnemonicParsing="false" onAction="#switchtoScene2" prefHeight="107.0" prefWidth="280.0" style="-fx-border-color: #000000; -fx-background-color: #ffffff;" text="Start" textFill="#512a1c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="61.0" />
+         </font></Button>
+      <TextField fx:id="PlayerNametf" alignment="CENTER" layoutX="672.0" layoutY="249.0" prefHeight="44.0" prefWidth="293.0" promptText="Enter Player Name">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <ImageView fx:id="Logo" fitHeight="450.0" fitWidth="506.0" layoutX="85.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Jackarologo.png" />
+         </image></ImageView>
+      <Label fx:id="warn" layoutX="154.0" layoutY="267.0" prefHeight="52.0" prefWidth="780.0" style="-fx-background-color: #ffe6e6; -fx-text-fill: red; -fx-border-color: red; -fx-border-width: 2; -fx-border-radius: 5; -fx-alignment: center;" textAlignment="CENTER" visible="false">
+    <font>
+        <Font size="24.0" />
+    </font>
+</Label>
+   </children>
+</AnchorPane>

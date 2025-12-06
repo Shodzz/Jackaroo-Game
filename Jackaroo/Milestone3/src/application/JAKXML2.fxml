@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller2">
+   <children>
+      <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Artboard%201.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="229.0" layoutX="-11.0" layoutY="858.0" stroke="BLACK" strokeType="INSIDE" width="559.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.11848341232227488" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3176470696926117" green="0.16470588743686676" blue="0.10980392247438431" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.1315789520740509" green="0.0901559442281723" blue="0.0901559442281723" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label fx:id="playerName" layoutX="14.0" layoutY="885.0" prefHeight="49.0" prefWidth="328.0" text="  Player:" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font></Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="216.0" layoutX="877.0" layoutY="874.0" stroke="BLACK" strokeType="INSIDE" width="259.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.11848341232227488" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3176470696926117" green="0.16470588743686676" blue="0.10980392247438431" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.1315789520740509" green="0.0901559442281723" blue="0.0901559442281723" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button fx:id="DeselectButton" layoutX="919.0" layoutY="894.0" mnemonicParsing="false" onAction="#Deselect" prefHeight="79.0" prefWidth="176.0" style="-fx-background-color: #964B00;" text="Deselect ">
+         <font>
+            <Font name="Goudy Old Style" size="33.0" />
+         </font>
+      </Button>
+      <HBox layoutX="472.0" layoutY="84.0" prefHeight="17.0" prefWidth="136.0" />
+      <Label fx:id="NumofCards" layoutX="33.0" layoutY="1012.0" prefHeight="49.0" prefWidth="328.0" text="Cards:" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="CurrentPlayer" layoutX="265.0" layoutY="885.0" prefHeight="49.0" prefWidth="275.0" text="Current:" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="EndTurnButton" layoutX="919.0" layoutY="982.0" mnemonicParsing="false" onAction="#EndTurn" prefHeight="79.0" prefWidth="176.0" style="-fx-background-color: #964B00;" text="End Turn">
+         <font>
+            <Font name="Goudy Old Style" size="33.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="719.0" layoutX="658.0" layoutY="143.0" stroke="BLACK" strokeType="INSIDE" width="638.0">
+         <fill>
+            <LinearGradient endX="0.3364928909952607" endY="1.0" startX="0.34123222748815163" startY="0.29383886255924174">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3176470696926117" green="0.16470588743686676" blue="0.10980392247438431" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.1315789520740509" green="0.0901559442281723" blue="0.0901559442281723" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="225.0" layoutX="1158.0" layoutY="861.0" stroke="BLACK" strokeType="INSIDE" width="691.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.11848341232227488" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.3176470696926117" green="0.16470588743686676" blue="0.10980392247438431" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.1315789520740509" green="0.0901559442281723" blue="0.0901559442281723" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <HBox fx:id="PlayerCards" layoutX="1215.0" layoutY="874.0" prefHeight="216.0" prefWidth="603.0">
+         <children>
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="250.0" prefWidth="150.0" text="Button" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="250.0" prefWidth="150.0" text="Button" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="250.0" prefWidth="150.0" text="Button" />
+            <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="250.0" prefWidth="150.0" text="Button" />
+         </children>
+      </HBox>
+      <Label fx:id="FirePitlabel" alignment="CENTER" layoutX="894.0" layoutY="354.0" prefHeight="49.0" prefWidth="176.0" text="FirePit" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="273.0" fitWidth="275.0" layoutX="845.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hole-.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.02" contrast="0.09" hue="0.01" saturation="1.0" />
+         </effect>
+      </ImageView>
+      <HBox fx:id="CPU2Cards" layoutX="681.0" layoutY="-55.0" prefHeight="216.0" prefWidth="603.0">
+         <children>
+            <ImageView fitHeight="250.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Covered%20deck.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="250.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Covered%20deck.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="250.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Covered%20deck.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="250.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Covered%20deck.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox fx:id="CPU1Cards" layoutX="14.0" layoutY="122.0" prefHeight="603.0" prefWidth="216.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Covered%20deck2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Covered%20deck2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Covered%20deck2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Covered%20deck2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox fx:id="CPU3Cards" layoutX="1710.0" layoutY="162.0" prefHeight="603.0" prefWidth="216.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Covered%20deck2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Covered%20deck2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Covered%20deck2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Covered%20deck2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox fx:id="Track9" layoutX="1256.0" layoutY="403.0" prefHeight="202.0" prefWidth="25.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button fx:id="base3" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </VBox>
+      <HBox fx:id="Track8" layoutX="1081.0" layoutY="378.0" prefHeight="17.0" prefWidth="200.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </HBox>
+      <HBox fx:id="Track10" layoutX="1081.0" layoutY="602.0" prefHeight="17.0" prefWidth="200.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </HBox>
+      <VBox fx:id="Track3" layoutX="681.0" layoutY="401.0" prefHeight="202.0" prefWidth="25.0">
+         <children>
+            <Button fx:id="base1" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </VBox>
+      <HBox fx:id="Track4" layoutX="681.0" layoutY="378.0" prefHeight="17.0" prefWidth="200.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </HBox>
+      <HBox fx:id="Track2" layoutX="681.0" layoutY="602.0" prefHeight="17.0" prefWidth="200.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </HBox>
+      <HBox fx:id="Track0" layoutX="881.0" layoutY="825.0" prefHeight="17.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="base0" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </HBox>
+      <VBox fx:id="Track1" layoutX="856.0" layoutY="625.0" prefHeight="223.0" prefWidth="25.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </VBox>
+      <VBox fx:id="Track11" layoutX="1081.0" layoutY="625.0" prefHeight="223.0" prefWidth="25.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </VBox>
+      <HBox fx:id="Track6" layoutX="881.0" layoutY="153.0" prefHeight="17.0" prefWidth="200.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button fx:id="base2" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </HBox>
+      <VBox fx:id="Track5" layoutX="856.0" layoutY="153.0" prefHeight="223.0" prefWidth="25.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </VBox>
+      <VBox fx:id="Track7" layoutX="1081.0" layoutY="153.0" prefHeight="223.0" prefWidth="25.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </VBox>
+      <VBox fx:id="Safezone0" layoutX="931.0" layoutY="725.0" prefHeight="104.0" prefWidth="25.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </VBox>
+      <VBox fx:id="Safezone2" layoutX="1006.0" layoutY="178.0" prefHeight="104.0" prefWidth="25.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </VBox>
+      <HBox fx:id="Safezone1" layoutX="706.0" layoutY="451.0" prefHeight="25.0" prefWidth="101.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </HBox>
+      <HBox fx:id="Safezone3" layoutX="1156.0" layoutY="528.0" prefHeight="25.0" prefWidth="101.0">
+         <children>
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+            <Button contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="Button" />
+         </children>
+      </HBox>
+      <HBox fx:id="Homezone0" layoutX="1182.0" layoutY="743.0" prefHeight="25.0" prefWidth="43.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox fx:id="Homezone00" layoutX="1182.0" layoutY="768.0" prefHeight="25.0" prefWidth="43.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox fx:id="Homezone1" layoutX="732.0" layoutY="743.0" prefHeight="25.0" prefWidth="43.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox fx:id="Homezone11" layoutX="732.0" layoutY="768.0" prefHeight="25.0" prefWidth="43.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox fx:id="Homezone2" layoutX="732.0" layoutY="205.0" prefHeight="25.0" prefWidth="43.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox fx:id="Homezone22" layoutX="732.0" layoutY="230.0" prefHeight="25.0" prefWidth="43.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox fx:id="Homezone3" layoutX="1182.0" layoutY="205.0" prefHeight="25.0" prefWidth="43.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox fx:id="Homezone33" layoutX="1182.0" layoutY="230.0" prefHeight="25.0" prefWidth="43.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <ImageView fx:id="FirePitimage" fitHeight="250.0" fitWidth="150.0" layoutX="906.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="CPU1" layoutX="33.0" layoutY="68.0" prefHeight="49.0" prefWidth="244.0" text="CPU1:" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="CPU2" layoutX="1305.0" layoutY="28.0" prefHeight="49.0" prefWidth="275.0" text="CPU2" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="CPU3" layoutX="1717.0" layoutY="93.0" prefHeight="49.0" prefWidth="200.0" text="CPU3" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="warn" layoutX="600.0" layoutY="277.0" prefHeight="52.0" prefWidth="780.0" style="-fx-background-color: #ffe6e6; -fx-text-fill: red; -fx-border-color: red; -fx-border-width: 2; -fx-border-radius: 5; -fx-alignment: center;" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="NumofTurns" layoutX="265.0" layoutY="1012.0" prefHeight="49.0" prefWidth="328.0" text="Turn:" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="NextPlayer" layoutX="269.0" layoutY="948.0" prefHeight="49.0" prefWidth="275.0" text="Next:" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+   <VBox fx:id="splitDistanceControls" layoutX="800.0" layoutY="330.0" prefHeight="150.0" prefWidth="350.0" style="-fx-background-color: #5a3921; -fx-border-color: #8b5a2b;              -fx-border-width: 2; -fx-padding: 10;" visible="false">
+         <children>
+            <Label text="Select split distance for Seven card:" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="50.0" spacing="10.0">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <children>
+                  <Label text="1" textFill="WHITE" />
+                  <Slider fx:id="splitDistanceSlider" blockIncrement="1.0" majorTickUnit="1.0" max="6.0" min="1.0" minorTickCount="0" prefWidth="200.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="3.0" />
+                  <Label text="6" textFill="WHITE" />
+               </children>
+            </HBox>
+            <Label fx:id="splitDistanceValueLabel" alignment="CENTER" prefWidth="300.0" text="Current: 3" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="confirmSplitButton" mnemonicParsing="false" onAction="#confirmSplitDistance" style="-fx-background-color: #8b5a2b; -fx-text-fill: white;" text="Confirm">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
